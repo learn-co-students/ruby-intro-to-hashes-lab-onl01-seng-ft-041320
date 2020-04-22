@@ -49,27 +49,15 @@ monopoly = {
 end
 
 def monopoly_with_fourth_tier
-monopoly = {
+ monopoly = {
 	  railroads: {
 	    pieces: 4,
-	     {
-      :reading_railroad=>
-      {
-        "mortgage_value"=>"$100"
-      },
-      :pennsylvania_railroad=>
-      {
-        "mortgage_value"=>"$200"
-      },
-      :b_and_o_railroad=>
-      {
-        "mortgage_value"=>"$400"
-      },
-      :shortline=>
-      {
-        "mortgage_value"=>"$800"
-      }
-    },
+	    names: {
+	      reading_railroad: {"mortgage_value" => "$100"},
+	      pennsylvania_railroad: {"mortgage_value" => "$200"},
+	      b_and_o_railroad: {"mortgage_value" => "$400"},
+	      shortline: {"mortgage_value" => "$800"}
+	    },
 	    rent_in_dollars: {
 	      one_piece_owned: 25,
 	      two_pieces_owned: 50,
@@ -77,6 +65,5 @@ monopoly = {
 	      four_pieces_owned: 200
 	    }
 	  }
-
-
+	}
 end
